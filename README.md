@@ -1,9 +1,6 @@
 # Melva
 
-README.txt
-==========
-
-This folder provides everything you need to repeat the experimentation regarding the following article:
+This repository provides everything you need to repeat the experimentation regarding the following article:
 
 	A Genetic Clustering Approach to Extract Data from HTML Tables
 	Patricia Jiménez, Juan C. Roldán, Rafael Corchuelo

@@ -1,0 +1,762 @@
+[2020-05-12, 10:28:24] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 93, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 138, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+NameError: name 'silhouette_score' is not defined
+
+[2020-05-12, 10:28:24] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 93, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 138, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+NameError: name 'silhouette_score' is not defined
+
+[2020-05-12, 10:29:56] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 552, in cluster_vector_table
+    cells = {xpath: int(lab) for (xpath, _), lab in zip(cells, clust.labels_)}
+AttributeError: 'numpy.ndarray' object has no attribute 'labels_'
+
+[2020-05-12, 10:29:57] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 552, in cluster_vector_table
+    cells = {xpath: int(lab) for (xpath, _), lab in zip(cells, clust.labels_)}
+AttributeError: 'numpy.ndarray' object has no attribute 'labels_'
+
+[2020-05-12, 10:33:04] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:04] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:04] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:06] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:13] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:13] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:13] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:14] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:16] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:33:19] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 94, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 139, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:13] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:13] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:13] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:13] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:14] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:21] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:21] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:21] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:21] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:24] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:26] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:26] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:37:32] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 144, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:38] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:38] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:38] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:41] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:48] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:48] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:48] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:48] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:50] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:51] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+[2020-05-12, 10:39:53] Traceback (most recent call last):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\__init__.py", line 23, in tables
+    functional_analysis(table, clustering_features, dimensionality_reduction, clustering_method, romulo_config)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 502, in functional_analysis
+    kind_functions[kind] = cluster_vector_table(vector_table, xpath_table, dimensionality_reduction, clustering_method)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\table_processing.py", line 551, in cluster_vector_table
+    clust = clusterer.fit(insts)
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 97, in fit
+    verbose=False
+  File "D:\Program Files\Python37\lib\site-packages\deap\algorithms.py", line 302, in eaMuPlusLambda
+    for ind, fit in zip(invalid_ind, fitnesses):
+  File "D:\Dropbox\research\_20151028 Information extractor\project\029 TOMATE-romulo\contrib\romulo.py", line 145, in evaluate
+    individual.silhouette_score = silhouette_score(dataframe, individual.labels)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 228, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "D:\Program Files\Python37\lib\site-packages\sklearn\metrics\cluster\_unsupervised.py", line 35, in check_number_of_labels
+    "to n_samples - 1 (inclusive)" % n_labels)
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
